@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="260.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_rezerwacja">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="260.0" prefWidth="349.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" text="Od:">
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding></Label>
+                  <DatePicker fx:id="od">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Do:">
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding></Label>
+                  <DatePicker fx:id="do2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets left="200.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="nazwisko" alignment="TOP_LEFT" maxWidth="300.0" prefWidth="300.0" promptText="Imię i nazwisko">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children></HBox>
+            <HBox maxHeight="50.0" prefHeight="50.0" prefWidth="350.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="mail" alignment="TOP_LEFT" prefWidth="200.0" promptText="Adres e-mail" />
+                  <TextField fx:id="telefon" alignment="TOP_LEFT" prefWidth="200.0" promptText="Numer telefonu" />
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ChoiceBox fx:id="pokoj" prefWidth="150.0">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value=" " />
+                           <String fx:value="101" />
+                           <String fx:value="102" />
+                           <String fx:value="103" />
+                           <String fx:value="104" />
+                           <String fx:value="105" />
+                           <String fx:value="106" />
+                           <String fx:value="107" />
+                           <String fx:value="108" />
+                           <String fx:value="109" />
+                           <String fx:value="110" />
+                           <String fx:value="111" />
+                           <String fx:value="112" />
+                           <String fx:value="113" />
+                           <String fx:value="114" />
+                           <String fx:value="115" />
+                           <String fx:value="116" />
+                           <String fx:value="117" />
+                           <String fx:value="118" />
+                           <String fx:value="119" />
+                           <String fx:value="120" />
+                        </FXCollections>
+                     </items>
+                     <value>
+                        <String fx:value=" "/>
+                     </value>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="95.0" top="5.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="button" alignment="CENTER" mnemonicParsing="false" onAction="#rezerwuj" text="Rezerwuj">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets left="100.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="140.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets top="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets top="20.0" />
+         </GridPane.margin></VBox>
+   </children>
+</GridPane>

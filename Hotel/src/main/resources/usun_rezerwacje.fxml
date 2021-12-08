@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="260.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_usun">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <VBox prefHeight="260.0" prefWidth="349.0">
+            <children>
+                <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label alignment="CENTER" text="Od:">
+                            <padding>
+                                <Insets top="4.0" />
+                            </padding></Label>
+                        <DatePicker fx:id="od">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </DatePicker>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Do:">
+                            <padding>
+                                <Insets top="4.0" />
+                            </padding></Label>
+                        <DatePicker fx:id="do2">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <opaqueInsets>
+                                <Insets left="200.0" />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </DatePicker>
+                    </children>
+                </HBox>
+                <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="nr_pokoju" alignment="TOP_LEFT" maxWidth="300.0" prefWidth="300.0" promptText="Numer pokoju" >
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets top="5.0" />
+                    </padding></VBox>
+                <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="nazwisko" alignment="TOP_LEFT" maxWidth="300.0" prefWidth="300.0" promptText="Imię i nazwisko">
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="5.0" />
+               </padding></VBox>
+
+
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="button" alignment="CENTER" mnemonicParsing="false" text="Usuń" onAction="#anuluj">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <opaqueInsets>
+                                <Insets left="100.0" />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets left="140.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+            <opaqueInsets>
+                <Insets top="10.0" />
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets top="20.0" />
+            </GridPane.margin></VBox>
+    </children>
+</GridPane>

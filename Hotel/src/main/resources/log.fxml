@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="160.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_log">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="350.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+   <children>
+      <TextField fx:id="login" maxWidth="200.0" promptText="Login" GridPane.halignment="CENTER" />
+       <PasswordField fx:id="haslo" maxWidth="200.0" promptText="Hasło" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <Button fx:id="btn" mnemonicParsing="false" text="Zaloguj się" GridPane.rowIndex="2" onAction="#pracownik">
+         <GridPane.margin>
+            <Insets left="200.0" />
+         </GridPane.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button mnemonicParsing="false" text="Anuluj" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="75.0" />
+         </GridPane.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+
+</GridPane>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="TOP_RIGHT" hgap="10" prefHeight="500.0" prefWidth="1000.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+       <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="170.4" minWidth="10.0" prefWidth="150.0" />
+       <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="689.0" minWidth="10.0" prefWidth="675.0" />
+       <ColumnConstraints halignment="RIGHT" maxWidth="450.0" minWidth="0.0" prefWidth="129.79999999999995" />
+   </columnConstraints>
+   <rowConstraints>
+       <RowConstraints maxHeight="170.0" minHeight="10.0" prefHeight="33.40000762939454" valignment="TOP" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="456.19999237060546" minHeight="10.0" prefHeight="456.19999237060546" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <HBox alignment="TOP_RIGHT" prefHeight="171.0" prefWidth="129.0" GridPane.columnIndex="2">
+         <children>
+             <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#zaloguj" text="Zaloguj się" GridPane.columnIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+         <GridPane.margin>
+            <Insets right="5.0" top="5.0" />
+         </GridPane.margin>
+      </HBox>
+      <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#rezerwacjaa" text="Rezerwacja">
+         <GridPane.margin>
+            <Insets left="5.0" top="5.0" />
+         </GridPane.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <content>
+          <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="1045.0">
+               <children>
+                  <TableView fx:id="tab" layoutY="-2.0" prefHeight="510.0" prefWidth="1045.0">
+                    <columns>
+                        <TableColumn fx:id="nrPokoju" editable="false" prefWidth="100.0" resizable="false" sortable="false" text="Numer pokoju">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k1" prefWidth="30.0" resizable="false" sortable="false" text="1">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k2" prefWidth="30.0" resizable="false" sortable="false" text="2">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k3" prefWidth="30.0" resizable="false" sortable="false" text="3">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k4" prefWidth="30.0" resizable="false" sortable="false" text="4">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k5" prefWidth="30.0" resizable="false" sortable="false" text="5">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k6" prefWidth="30.0" resizable="false" sortable="false" text="6">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k7" prefWidth="30.0" resizable="false" sortable="false" text="7">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k8" prefWidth="30.0" resizable="false" sortable="false" text="8">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k9" prefWidth="30.0" resizable="false" sortable="false" text="9">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k10" prefWidth="30.0" resizable="false" sortable="false" text="10">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k11" prefWidth="30.0" resizable="false" sortable="false" text="11">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k12" prefWidth="30.0" resizable="false" sortable="false" text="12">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k13" prefWidth="30.0" resizable="false" sortable="false" text="13">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k14" prefWidth="30.0" resizable="false" sortable="false" text="14">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k15" prefWidth="30.0" resizable="false" sortable="false" text="15">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k16" prefWidth="30.0" resizable="false" sortable="false" text="16">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k17" prefWidth="30.0" resizable="false" sortable="false" text="17">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k18" prefWidth="30.0" resizable="false" sortable="false" text="18">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k19" prefWidth="30.0" resizable="false" sortable="false" text="19">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k20" prefWidth="30.0" resizable="false" sortable="false" text="20">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k21" prefWidth="30.0" resizable="false" sortable="false" text="21">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k22" prefWidth="30.0" resizable="false" sortable="false" text="22">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k23" prefWidth="30.0" resizable="false" sortable="false" text="23">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k24" prefWidth="30.0" resizable="false" sortable="false" text="24">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k25" prefWidth="30.0" resizable="false" sortable="false" text="25">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k26" prefWidth="30.0" resizable="false" sortable="false" text="26">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k27" prefWidth="30.0" resizable="false" sortable="false" text="27">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k28" prefWidth="30.0" resizable="false" sortable="false" text="28">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k29" prefWidth="30.0" resizable="false" sortable="false" text="29">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k30" prefWidth="30.0" resizable="false" sortable="false" text="30">
+
+                        </TableColumn>
+                        <TableColumn fx:id="k31" prefWidth="30.0" resizable="false" sortable="false" text="31">
+
+                        </TableColumn>
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label text="Rezerwacje" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets right="250.0" top="5.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox" prefWidth="150.0" visibleRowCount="5" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Styczeń" />
+                  <String fx:value="Luty" />
+                  <String fx:value="Marzec" />
+                  <String fx:value="Kwiecień" />
+                  <String fx:value="Maj" />
+                  <String fx:value="Czerwiec" />
+                  <String fx:value="Lipiec" />
+                  <String fx:value="Sierpień" />
+                  <String fx:value="Wrzesień" />
+                  <String fx:value="Październik" />
+                  <String fx:value="Listopad" />
+                  <String fx:value="Grudzień" />
+              </FXCollections>
+          </items>
+          <value>
+              <String fx:value="Styczeń" />
+          </value>
+         <GridPane.margin>
+            <Insets right="270.0" top="5.0" />
+         </GridPane.margin>
+      </ComboBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="20.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-background-color: springgreen" text="Label" textFill="springgreen" />
+                  <Label text=" - wolny pokój" />
+               </children>
+               <VBox.margin>
+                  <Insets top="360.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="20.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-background-color: #E09F7D" text="Label" textFill="#E09F7D" />
+                  <Label text=" - rezerwacja" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets right="8.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <ComboBox fx:id="comboBox_rok" prefWidth="100.0" GridPane.columnIndex="1" visibleRowCount="5">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="2020" />
+                  <String fx:value="2021" />
+                  <String fx:value="2022" />
+                  <String fx:value="2023" />
+                  <String fx:value="2024" />
+              </FXCollections>
+          </items>
+          <value>
+              <String fx:value="2020" />
+          </value>
+         <GridPane.margin>
+            <Insets left="270.0" top="5.0" />
+         </GridPane.margin>
+      </ComboBox>
+    </children>
+</GridPane>
